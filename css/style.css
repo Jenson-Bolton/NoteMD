@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("./themes/nord.css");
+
+:root {
+    --page-font: 'Poppins', Helvetica, Arial, sans-serif;
+    --output-font: 'Poppins', Helvetica, Arial, sans-serif;
+    --input-font: 'Courier Prime', 'Courier New', Courier, monospace;
+    --bg-color1: var(--nord0);
+    --bg-color2: var(--nord1);
+    --bg-color3: var(--nord2);
+    --bg-color4: var(--nord3);
+    --text-color: var(--nord6);
+    --link-color: var(--nord8);
+    --opened-link-color: var(--nord9);
+    --code-size: 12pt;
+}
+
+body,
+html {
+    background-color: var(--bg-color4);
+    color: var(--text-color);
+    font-family: var(--page-font);
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+header {
+    font-size: 14pt;
+    height: 4rem;
+    vertical-align: middle;
+}
+
+hr {
+    border-color: var(--text-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+* > main {
+    height: calc(100% - 4rem);
+}
+
+
+/* CSS for MD output */
+
+.bold {
+    font-weight: bold;
+}
+
+.heading-1 {
+    margin-top: 0.2em;
+    font-size: 2em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link:active,
+.link:hover {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: var(--opened-link-color);
+    text-decoration: none;
+}
+
+/* Page CSS */
+
+.output-area {
+    color: var(--text-color);
+    font-family: var(--output-font);
+    font-size: var(--code-size);
+    padding: 2em;
+    width: calc(100% - 4em);
+    max-height: calc(100vh - 4em - 4rem);
+    overflow: auto;
+}
+
+.side-bar {
+    background-color: var(--bg-color3);
+    padding: 2em;
+    height: calc(100%-4em);
+}
+
+.work-area {
+    background-color: var(--bg-color2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#input {
+    background-color: var(--bg-color1);
+    border: none;
+    color: var(--text-color);
+    font-family: var(--input-font);
+    font-size: var(--code-size);
+    padding: 2em;
+    width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    resize: none;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.span-col-3 { grid-column: span 3 / auto; }
+.span-col-5 { grid-column: span 5 / auto; }
+.span-row-2 { grid-row: span 2 / auto; }
