@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("./nord.css");
+
+:root {
+    --page-font: 'Poppins', Helvetica, Arial, sans-serif;
+    --output-font: 'Poppins', Helvetica, Arial, sans-serif;
+    --input-font: 'Courier Prime', 'Courier New', Courier, monospace;
+    --bg-color1: var(--nord0);
+    --bg-color2: var(--nord1);
+    --bg-color3: var(--nord2);
+    --bg-color4: var(--nord3);
+    --text-color: var(--nord6);
+}
+
+body,
+html {
+    background-color: var(--bg-color1);
+    font-family: var(--page-font);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+* > main {
+    height: 100%;
+}
+
+.work-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#input {
+    border: none;
+    font-family: var(--input-font);
+    font-size: 10.5pt;
+    padding: 1em;
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    resize: none;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.span-col-3 { grid-column: span 3 / auto; }
+.span-col-5 { grid-column: span 5 / auto; }
+.span-row-2 { grid-row: span 2 / auto; }
