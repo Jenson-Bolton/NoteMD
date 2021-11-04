@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>NoteMD</title>
+  </head>
+  <body>
+    <header>
+      <h1>NoteMD</h1>
+    </header>
+    <main>
+      <div class="side-bar">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          alias praesentium id, pariatur, dolorum quas nihil, natus sit veniam
+          repellendus nobis provident aliquam sequi tempora cum doloribus
+          dolores voluptatem incidunt!
+        </p>
+      </div>
+      <div class="work-area span-col-5">
+        <div class="input-area">
+          <textarea
+            id="input"
+            placeholder="Enter Markdown Here"
+            spellcheck="false"
+            oninput="update(this.value); sync_scroll(this);"
+            onscroll="sync_scroll(this);"
+            onkeydown="check_tab(this, event);"
+          ></textarea>
+        </div>
+        <div class="output-area" id="output">
+          <h1 class="heading-1">Welcome to NoteMD</h1>
+          <hr />
+          <p>
+            Hi there this is <span class="bold">NoteMD.</span>
+            <span class="italic">Made</span> by
+            <a href="https://jensonbolton.com" target="_blank" class="link bold"
+              >JensonBolton</a
+            >.
+          </p>
+          <blockquote class="md">This is my blockquote</blockquote>
+          <blockquote class="md">
+            <blockquote class="md">
+              This is my blockquote in a blockquote
+            </blockquote>
+          </blockquote>
+          <h1 class="heading-1">Heading Level 1</h1>
+          <h2 class="heading-2">Heading Level 2</h2>
+          <h3 class="heading-3">Heading Level 3</h3>
+          <h4 class="heading-4">Heading Level 4</h4>
+          <h5 class="heading-5">Heading Level 5</h5>
+          <h6 class="heading-6">Heading Level 6</h6>
+          <ol class="ordered-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>
+              Third item
+              <ol>
+                <li>Indented item</li>
+                <li>Indented item</li>
+              </ol>
+            </li>
+            <li>Fourth item</li>
+          </ol>
+          <ul class="unordered-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>
+              Third item
+              <ul>
+                <li>Indented item</li>
+                <li>Indented item</li>
+              </ul>
+            </li>
+            <li>Fourth item</li>
+          </ul>
+          <img
+            class="img"
+            src="https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png"
+            alt="Tux, the Linux mascot"
+          />
+          <pre class="code-block">
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+        moreindent
+&lt;/html&gt;</pre
+          >
+          <img
+            class="img"
+            src="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&fit=clip&q=40&w=1080"
+            title="San Juan Mountains"
+            alt="San Juan Mountains"
+          />
+          <a
+            href="https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv"
+          >
+            <img
+              class="img"
+              src="https://mdg.imgix.net/assets/images/shiprock.jpg?auto=format&fit=clip&q=40&w=1080"
+              title="Shiprock, New Mexico by Beau Rogers"
+              alt="Shiprock, New Mexico by Beau Rogers"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

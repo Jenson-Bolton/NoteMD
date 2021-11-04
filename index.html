@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/style.css">
-  <title>NoteMD</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>NoteMD</title>
+  </head>
+  <body>
     <header>
-        <h1>NoteMD</h1>
+      <h1>NoteMD</h1>
     </header>
     <main>
-        <div class="side-bar">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis alias praesentium id, pariatur, dolorum quas nihil, natus sit veniam repellendus nobis provident aliquam sequi tempora cum doloribus dolores voluptatem incidunt!</p>
+      <div class="side-bar">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          alias praesentium id, pariatur, dolorum quas nihil, natus sit veniam
+          repellendus nobis provident aliquam sequi tempora cum doloribus
+          dolores voluptatem incidunt!
+        </p>
+      </div>
+      <div class="work-area span-col-5">
+        <div class="input-area">
+          <textarea
+            id="input"
+            placeholder="Enter Markdown Here"
+            spellcheck="false"
+            oninput="update(this.value); sync_scroll(this);"
+            onscroll="sync_scroll(this);"
+            onkeydown="check_tab(this, event);"
+          ></textarea>
         </div>
-        <div class="work-area span-col-5">
-            <div class="input-area">
-                <textarea id="input" placeholder="Enter Markdown Here" spellcheck="false" oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
-            </div>
-            <div class="output-area" id="output">
-                <h1 class="heading-1">Welcome to NoteMD</h1>
-                <hr>
-                <p>
-                    Hi there this is <span class="bold">NoteMD.</span> <span class="italic">Made</span> by <a href="https://jensonbolton.com" target="_blank" class="link bold">JensonBolton</a>.
-                </p>
-                <blockquote>This is my blockquote</blockquote>
-            </div>
-        </div>
+        <div class="output-area" id="output"></div>
+      </div>
     </main>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
