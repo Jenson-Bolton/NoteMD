@@ -86,6 +86,10 @@ blockquote.md .heading-1 {
   padding: 1rem;
 }
 
+span.code-block {
+  margin: 0;
+}
+
 .heading-1 {
   margin-top: 0.2em;
   font-size: 2em;
