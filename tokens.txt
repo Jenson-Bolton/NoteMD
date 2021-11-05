@@ -1,0 +1,26 @@
+Token Class    Example
+
+heading        # , ## , ### ,
+paragraph      I really like using Markdown.,
+linebreak        ,<br>,
+emphasis       *, **, ***,
+blockqoute     > ,
+list           1.
+               2.
+               3.,
+               -
+               -
+               -,
+               *
+               *
+               *,
+               +
+               +
+               +,
+codeblock      `,    ,
+rules          ***, ---, _________________,
+links          [](), <>,
+images         ![](), [![]](),
+escape         \,
+
+// https://www.markdownguide.org/basic-syntax/#escaping-characters
