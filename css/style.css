@@ -10,8 +10,8 @@
   --bg-color2: var(--nord1);
   --bg-color3: var(--nord2);
   --bg-color4: var(--nord3);
-  --text-color: var(--nord6);
-  --text-darker-color: var(--nord4);
+  --text-color1: var(--nord6);
+  --text-color2: var(--nord4);
   --link-color: var(--nord8);
   --opened-link-color: var(--nord9);
   --code-size: 12pt;
@@ -20,7 +20,7 @@
 body,
 html {
   background-color: var(--bg-color4);
-  color: var(--text-color);
+  color: var(--text-color1);
   font-family: var(--page-font);
   height: 100%;
   overflow-y: hidden;
@@ -47,7 +47,7 @@ header {
 }
 
 hr {
-  border-color: var(--text-color);
+  border-color: var(--text-color1);
 }
 
 main {
@@ -160,7 +160,7 @@ span.code-block {
 /* Page CSS */
 
 .output-area {
-  color: var(--text-color);
+  color: var(--text-color1);
   font-family: var(--output-font);
   font-size: var(--code-size);
   padding: 2em;
@@ -184,7 +184,7 @@ span.code-block {
 #input {
   background-color: var(--bg-color1);
   border: none;
-  color: var(--text-color);
+  color: var(--text-color1);
   font-family: var(--input-font);
   font-size: var(--code-size);
   padding: 2em;
@@ -217,9 +217,9 @@ span.code-block {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-color);
+  background: var(--text-color1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-darker-color);
+  background: var(--text-color2);
 }

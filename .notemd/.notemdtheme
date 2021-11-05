@@ -1,0 +1,11 @@
+{
+    "currentTheme": "Nord",
+    "themes": [
+        {
+            "name": "Nord",
+            "bg": ["#2e3440", "#3b4252", "#434c5e", "#4c566a"],
+            "txt": ["#d8dee9", "#e5e9f0", "#eceff4"],
+            "link": ["#88c0d0", "#81a1c1"]
+        }
+    ] 
+}
