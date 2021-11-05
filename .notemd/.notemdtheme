@@ -4,8 +4,58 @@
         {
             "name": "Nord",
             "bg": ["#2e3440", "#3b4252", "#434c5e", "#4c566a"],
-            "txt": ["#d8dee9", "#e5e9f0", "#eceff4"],
-            "link": ["#88c0d0", "#81a1c1"]
+            "txt": ["#eceff4", "#e5e9f0", "#d8dee9"],
+            "link": ["#88c0d0", "#81a1c1"],
+            "syntax": [
+                {
+                    "type": "blockquotes",
+                    "color": "#a3be8c"
+                },
+                {
+                    "type": "bold",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "bold-italic",
+                    "color": "#5e81ac"
+                }
+                {
+                    "type": "heading1",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "heading2",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "heading3",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "heading4",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "heading5",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "heading6",
+                    "color": "#5e81ac"
+                },
+                {
+                    "type": "italic",
+                    "color": "#d8dee9"
+                },
+                {
+                    "type": "link",
+                    "color": "#d08770"
+                },
+                {
+                    "type": "list",
+                    "color": "#5e81ac"
+                }
+            ]
         }
     ] 
 }
