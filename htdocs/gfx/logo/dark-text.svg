@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="dark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.6171875"
+     inkscape:cx="232.81159"
+     inkscape:cy="256.30918"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="bg"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <path
+       id="rect846"
+       style="fill:#2e3440;fill-opacity:1;stroke-width:0;stroke-linejoin:bevel"
+       d="M 50,0 A 50,50 0 0 0 0,50 v 412 a 50,50 0 0 0 50,50 h 412 a 50,50 0 0 0 50,-50 V 50 A 50,50 0 0 0 462,0 Z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Logo">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:144px;line-height:1.25;font-family:sans-serif;fill:#eceff4;fill-opacity:1;stroke:none"
+       x="83.926239"
+       y="308.36365"
+       id="text2324"><tspan
+         sodipodi:role="line"
+         id="tspan2322"
+         x="83.926239"
+         y="308.36365"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:144px;font-family:Inter;-inkscape-font-specification:'Inter Bold';fill:#eceff4;fill-opacity:1">NMD</tspan></text>
+  </g>
+</svg>
