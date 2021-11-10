@@ -17,6 +17,21 @@
   --code-size: 12pt;
 }
 
+a {
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active a:hover {
+  text-decoration: none;
+}
+
+a::visited {
+  color: var(--opened-link-color);
+  text-decoration: none;
+}
+
 body,
 html {
   background-color: var(--bg-color4);

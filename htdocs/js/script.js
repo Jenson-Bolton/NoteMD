@@ -17,7 +17,7 @@ function parseMarkdown(markdownText) {
     .replace(/!\[(.*?)\]\((.*?)\)/gim, '<img class="img" alt="$1" src="$2" />')
     .replace(/\[(.*?)\]\((.*?)\)/gim, '<a class="link" href="$2">$1</a>')
     .replace(/\n$|  /gim, "<br />")
-    .replace(/^- (.*$)/gim, "<li>$1</li>")
+    .replace(/^- (.*$)|^ - (.*$)/gim, "<li>$1$2</li>")
     .replace(/^\t(.*$)/gim, '<pre class="code-block">$1</pre>');
 
   return htmlText.trim();
